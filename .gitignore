@@ -1,0 +1,6 @@
+.xmake/
+bin/
+build/
+obj/
+
+.vscode/
