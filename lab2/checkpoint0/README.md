@@ -97,7 +97,10 @@ int main(int argc, char* argv[]) {
 
 ## 关于代码框架
 
-代码框架分为两个部分, 包含 Python 编写的 server 和 C# 语言编写的 client.
+代码框架分为两个部分, 包含 Python 编写的 server 和 C# 语言编写的 client. 代码的大致功能是 Client 接受用户操纵, 向 Server 发送指令, 并且 Server 也要向 Client 提供状态反馈(Optional). 而 Server 有一个被困在围栏中的小人, 你可以操纵小人进行上下左右移动操作, 但移动无法超出围栏. 你的任务为:
+- 拟定通信协议, 包含 Client 控制 Server 的语句, 以及可选的 Server 提供状态反馈的协议. 注意小心拟定协议的语序和语义; 对于语法部分, JSON 格式等序列化格式或者二进制格式( 按照字节或比特为单位编码数据) 都是可以的.
+- 补全 server 和 C# client 的代码框架.
+- (Optional) 使用 C# 和 Python 以外的编程语言, 编写一对新的 client 和 server. 自由组合你编写的 client 和 server, 看看它们是否都能工作.
 
 ### Server
 
