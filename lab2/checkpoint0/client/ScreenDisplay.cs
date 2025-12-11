@@ -1,0 +1,6 @@
+namespace client;
+
+class ScreenDisplay
+{
+  
+}

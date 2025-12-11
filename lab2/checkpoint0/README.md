@@ -105,3 +105,7 @@ int main(int argc, char* argv[]) {
 ### Server
 
 在 Server 中, 你只需要更改 server.py. 共有两处需要更改: `Servre._handler` 内的闭包函数 `handler` 和 `Server.serve_forever`. 除此之外的代码框架不多, 也很好理解, 注意观察 `Server` 是如何与其他的模块沟通的, 这对于之后的 Checkpoint 颇有帮助.
+
+### Client
+
+暂未完工:(

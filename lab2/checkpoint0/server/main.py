@@ -1,5 +1,6 @@
 """Contains main controller and main function"""
 
+import platform
 import asyncio
 import os
 from enum import Enum
@@ -55,7 +56,14 @@ class ScreenDisplay:
 
     def draw(self):
         """refresh the screen and draw the cute ascii person"""
-        os.system("clear")
+        if platform.platform().lower() == "linux":
+            os.system("clear")
+        elif platform.platform().lower() == "windows":
+            os.system("cls")
+        else:
+            raise RuntimeError(
+                f"Unsupported Operation System {platform.platform()}! Add suitable clear command"
+            )
         print(str(self))
 
     def __str__(self):
