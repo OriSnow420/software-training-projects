@@ -89,7 +89,7 @@ async def main():
     screen = ScreenDisplay(WIDTH, HEIGHT, PERSON, True)
     screen.draw()
 
-    server = Server("127.0.0.1", 1999)
+    server = Server("0.0.0.0", 1999)
     server.bind_screen(screen)
 
     await server.serve_forever()
